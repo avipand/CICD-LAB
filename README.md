@@ -1,2 +1,2 @@
 # CICD-LAB
-Certainly! Here's a more polished and influential version of the given line:  ---  This lab is designed for students eager to master CI/CD and Jenkins pipelines. We've included an additional server, enabling students to push code and gain real-time, hands-on experience. 
+ This project is created for the student who wants to run cicd or jenkins . In this lab we have one server so everyone can push there code that server . 

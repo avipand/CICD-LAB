@@ -1,0 +1,26 @@
+services:
+  server1:
+    build: Serverfile/
+    container_name: server1
+    networks:
+      - jenkins-network
+    stdin_open: true
+    tty: true  
+  jenkins:
+    build: Jenkins/
+    container_name: jenkins
+    ports:
+      - "8080:8080"
+      - "50000:50000"
+    volumes:
+      - /media/ghost/Drive/Learning/Jenkins/Lab/jenkins_bind:/var/jenkins_home
+    networks:
+      - jenkins-network
+    stdin_open: true
+    tty: true    
+networks:
+  jenkins-network:
+    driver: bridge
+volumes:
+  jenkins_home:
+    driver: local
